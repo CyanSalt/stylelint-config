@@ -1,5 +1,5 @@
 {
-  "name": "@cyansalt/style-config",
+  "name": "@cyansalt/stylelint-config",
   "version": "0.1.0",
   "description": "My Stylelint configuration",
   "main": "index.js",

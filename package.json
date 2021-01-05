@@ -1,0 +1,20 @@
+{
+  "name": "@cyansalt/style-config",
+  "version": "0.1.0-0",
+  "description": "My Stylelint configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyanSalt/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelintconfig"
+  ],
+  "author": "CyanSalt",
+  "license": "ISC",
+  "dependencies": {
+    "semver": "^7.3.4",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}

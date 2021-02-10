@@ -12,6 +12,7 @@ module.exports = {
 
     /** Limit language features */
     'color-named': 'always-where-possible',
+    'color-function-notation': 'modern',
     'shorthand-property-no-redundant-values': [true, { severity: 'warning' }],
     'value-no-vendor-prefix': [true, { ignoreValues: ['box', 'inline-box'] }],
     'property-disallowed-list': ['widows'],

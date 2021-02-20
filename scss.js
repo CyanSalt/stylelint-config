@@ -1,3 +1,6 @@
+/**
+ * Supports stylelint-scss@^3.19.0
+ */
 module.exports = {
   plugins: [
     'stylelint-scss',

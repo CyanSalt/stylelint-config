@@ -1,3 +1,6 @@
+/**
+ * Supports stylelint@^13.10.0
+ */
 module.exports = {
   extends: [
     'stylelint-config-recommended',

@@ -10,8 +10,8 @@ module.exports = {
     'font-family-no-missing-generic-family-keyword': null,
     'declaration-block-no-duplicate-custom-properties': true,
     'declaration-block-no-duplicate-properties': [true, { ignore: ['consecutive-duplicates'] }],
-    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['export'] }],
-    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep'] }],
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['deep', 'export', 'global'] }],
+    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep', 'v-global'] }],
     'no-descending-specificity': null,
 
     /** Limit language features */

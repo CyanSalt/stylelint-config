@@ -8,6 +8,8 @@ module.exports = {
   rules: {
     /** Possible errors */
     'font-family-no-missing-generic-family-keyword': null,
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['deep', 'export', 'global'] }],
+    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep', 'v-global'] }],
     'no-descending-specificity': null,
 
     /** Limit language features */

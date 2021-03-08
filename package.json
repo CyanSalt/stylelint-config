@@ -14,8 +14,7 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
-    "semver": "^7.3.4",
-    "stylelint-config-recommended": "^3.0.0"
+    "semver": "^7.3.4"
   },
   "peerDependencies": {
     "stylelint": "^13.10.0"

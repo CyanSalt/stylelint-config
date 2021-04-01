@@ -53,3 +53,14 @@ module.exports {
   // ...
 }
 ```
+
+## CLI
+
+You can update current Stylelint packages with `npx`:
+
+```shell
+npx @cyansalt/stylelint-config --check
+```
+
+- You can pass `-y` to skip the question and update packages immediately.
+- Or install/update all recommended packages with `-a` argument.

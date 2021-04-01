@@ -2,7 +2,11 @@
   "name": "@cyansalt/stylelint-config",
   "version": "1.2.3",
   "description": "My Stylelint configuration",
+  "bin": "scripts/cli.js",
   "main": "index.js",
+  "scripts": {
+    "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CyanSalt/stylelint-config.git"
@@ -15,7 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "semver": "^7.3.4",
-    "stylelint-config-recommended": "^4.0.0"
+    "stylelint-config-recommended": "^4.0.0",
+    "yargs-parser": "^20.2.7"
   },
   "peerDependencies": {
     "stylelint": "^13.12.0"

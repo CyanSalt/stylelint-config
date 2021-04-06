@@ -59,7 +59,7 @@ module.exports {
 You can update current Stylelint packages with `npx`:
 
 ```shell
-npx @cyansalt/stylelint-config --check
+npx @cyansalt/stylelint-config --update
 ```
 
 - You can pass `-y` to skip the question and update packages immediately.

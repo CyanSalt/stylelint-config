@@ -8,7 +8,6 @@ module.exports = {
     'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['deep', 'export', 'global'] }],
     'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep', 'v-global'] }],
     'no-descending-specificity': null,
-    'no-invalid-position-at-import-rule': true,
 
     /** Limit language features */
     'color-named': 'always-where-possible',
@@ -100,6 +99,5 @@ module.exports = {
     'no-missing-end-of-source-newline': [true, { severity: 'warning' }],
     'no-empty-first-line': [true, { severity: 'warning' }],
     'unicode-bom': ['never', { severity: 'warning' }],
-    'no-irregular-whitespace': true,
   },
 };

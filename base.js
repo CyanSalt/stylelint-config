@@ -100,4 +100,4 @@ module.exports = {
     'no-empty-first-line': [true, { severity: 'warning' }],
     'unicode-bom': ['never', { severity: 'warning' }],
   },
-};
+}

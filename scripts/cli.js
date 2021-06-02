@@ -2,11 +2,14 @@
 const childProcess = require('child_process')
 const readline = require('readline')
 const semver = require('semver')
+const { createLinter } = require('stylelint')
 const yargsParser = require('yargs-parser')
 const plugins = require('../plugins.json')
 const { getInstalledPackageVersion, hasInstalledPackage } = require('../utils')
 
-function getOutdatedPackages(checkAll) {
+async function getOutdatedPackages(checkAll) {
+  // Load config file
+  await createLinter().getConfigForFile()
   const result = []
   for (const [name, metadata] of Object.entries(plugins)) {
     const installedVersion = getInstalledPackageVersion(name)
@@ -44,7 +47,7 @@ async function ask(question) {
 }
 
 async function update(args) {
-  const packages = getOutdatedPackages(args.a)
+  const packages = await getOutdatedPackages(args.a)
   if (args.json) {
     console.log(JSON.stringify(packages, null, 2))
     return

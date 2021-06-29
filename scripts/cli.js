@@ -8,8 +8,12 @@ const plugins = require('../plugins.json')
 const { getInstalledPackageVersion, hasInstalledPackage } = require('../utils')
 
 async function getOutdatedPackages(checkAll) {
-  // Load config file
-  await createLinter().getConfigForFile()
+  // Load config
+  try {
+    await createLinter().getConfigForFile()
+  } catch (err) {
+    // ignore error
+  }
   const result = []
   for (const [name, metadata] of Object.entries(plugins)) {
     const installedVersion = getInstalledPackageVersion(name)

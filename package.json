@@ -5,7 +5,8 @@
   "bin": "scripts/cli.js",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\""
+    "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\"",
+    "lint": "eslint --ignore-path .gitignore --fix ."
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,13 @@
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
     "stylelint-config-recommended": "^5.0.0",
-    "yargs-parser": "^20.2.7"
+    "yargs-parser": "^20.2.9"
   },
   "peerDependencies": {
     "stylelint": "^13.13.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^1.9.2",
-    "eslint": "^7.27.0"
+    "@cyansalt/eslint-config": "^1.13.0",
+    "eslint": "^7.32.0"
   }
 }

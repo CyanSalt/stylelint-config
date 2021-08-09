@@ -1,4 +1,4 @@
-const cosmiconfig = require('cosmiconfig')
+const { cosmiconfigSync } = require('cosmiconfig')
 const findUp = require('find-up')
 const semver = require('semver')
 
@@ -8,9 +8,7 @@ function getAllDependencies() {
   if (cachedDeps) {
     return cachedDeps
   }
-  const nearestConfig = cosmiconfig.cosmiconfigSync
-    ? cosmiconfig.cosmiconfigSync('stylelint').search(process.cwd())
-    : cosmiconfig('stylelint').searchSync(process.cwd())
+  const nearestConfig = cosmiconfigSync('stylelint').search(process.cwd())
   if (!nearestConfig) {
     cachedDeps = []
     return cachedDeps

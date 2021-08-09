@@ -18,6 +18,7 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
+    "cosmiconfig": "^7.0.0",
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
     "stylelint-config-recommended": "^5.0.0",

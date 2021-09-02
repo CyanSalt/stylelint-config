@@ -77,6 +77,12 @@ const box = [
 
   // Box sizing
   'box-sizing',
+  'block-size',
+  'min-block-size',
+  'max-block-size',
+  'inline-size',
+  'min-inline-size',
+  'max-inline-size',
   'width',
   'min-width',
   'max-width',
@@ -86,6 +92,12 @@ const box = [
 
   // Margin
   'margin',
+  'margin-block',
+  'margin-block-start',
+  'margin-block-end',
+  'margin-inline',
+  'margin-inline-start',
+  'margin-inline-end',
   'margin-top',
   'margin-right',
   'margin-bottom',
@@ -93,6 +105,12 @@ const box = [
 
   // Padding
   'padding',
+  'padding-block',
+  'padding-block-start',
+  'padding-block-end',
+  'padding-inline',
+  'padding-inline-start',
+  'padding-inline-end',
   'padding-top',
   'padding-right',
   'padding-bottom',
@@ -100,6 +118,18 @@ const box = [
 
   // Border (Size)
   'border',
+  'border-block',
+  'border-block-width',
+  'border-block-start',
+  'border-block-start-width',
+  'border-block-end',
+  'border-block-end-width',
+  'border-inline',
+  'border-inline-width',
+  'border-inline-start',
+  'border-inline-start-width',
+  'border-inline-end',
+  'border-inline-end-width',
   'border-width',
   'border-top',
   'border-top-width',
@@ -126,18 +156,19 @@ const typography = [
 
   // Font
   'font',
+  'font-family',
   'font-style',
   'font-variant',
   'font-weight',
   'font-size',
-  'font-family',
   'font-size-adjust',
   'font-stretch',
+  'src', // @font-face
   'line-height',
 
   // Direction
-  'direction',
   'writing-mode',
+  'direction',
   'text-orientation',
 
   // Spacing and alignment
@@ -162,15 +193,18 @@ const typography = [
   'unicode-bidi',
 
   // Page breaking
-  'break-after',
   'break-before',
+  'break-after',
   'break-inside',
-
-  // Font face
-  'src',
 ]
 
 const visualization = [
+  // Overflow
+  'overflow',
+  'overflow-x',
+  'overflow-y',
+  'overflow-scrolling',
+
   // SVG
   'fill',
   'fill-rule',
@@ -183,52 +217,64 @@ const visualization = [
   'list-style-position',
   'list-style-type',
 
-  // Image
+  // Replaced elements
   'object-fit',
   'object-position',
   'image-orientation',
 
   // Background
   'background',
-  'background-attachment',
-  'background-clip',
-  'background-color',
   'background-image',
-  'background-origin',
   'background-position',
   'background-position-x',
   'background-position-y',
-  'background-repeat',
   'background-size',
+  'background-repeat',
+  'background-origin',
+  'background-clip',
+  'background-attachment',
+  'background-color',
 
   // Border
-  'border-color',
   'border-style',
-  'border-top-color',
+  'border-color',
+  'border-block-style',
+  'border-block-color',
+  'border-block-start-style',
+  'border-block-end-style',
+  'border-block-start-color',
+  'border-block-end-color',
+  'border-inline-style',
+  'border-inline-color',
+  'border-inline-start-style',
+  'border-inline-end-style',
+  'border-inline-start-color',
+  'border-inline-end-color',
   'border-top-style',
-  'border-right-color',
+  'border-top-color',
   'border-right-style',
-  'border-bottom-color',
+  'border-right-color',
   'border-bottom-style',
-  'border-left-color',
+  'border-bottom-color',
   'border-left-style',
+  'border-left-color',
   'border-radius',
   'border-top-left-radius',
   'border-top-right-radius',
   'border-bottom-right-radius',
   'border-bottom-left-radius',
   'border-image',
+  'border-image-source',
+  'border-image-slice',
+  'border-image-width',
   'border-image-outset',
   'border-image-repeat',
-  'border-image-slice',
-  'border-image-source',
-  'border-image-width',
 
   // Outline
   'outline',
-  'outline-color',
-  'outline-style',
   'outline-width',
+  'outline-style',
+  'outline-color',
   'outline-offset',
 
   // Multi-column
@@ -250,14 +296,14 @@ const visualization = [
 
   // Mask
   'mask',
-  'mask-clip',
-  'mask-composite',
   'mask-image',
   'mask-mode',
-  'mask-origin',
-  'mask-position',
   'mask-repeat',
+  'mask-position',
+  'mask-clip',
+  'mask-origin',
   'mask-size',
+  'mask-composite',
   'clip',
   'clip-path',
   'clip-rule', // SVG
@@ -276,10 +322,10 @@ const transform = [
 const animation = [
   // Transition
   'transition',
-  'transition-delay',
-  'transition-duration',
   'transition-property',
+  'transition-duration',
   'transition-timing-function',
+  'transition-delay',
 
   // Animation
   'animation',

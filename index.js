@@ -13,6 +13,10 @@ if (hasInstalledPackage('stylelint-plugin-aurora')) {
   presets.push(path.resolve(__dirname, './aurora/index.js'))
 }
 
+if (hasInstalledPackage('stylelint-order')) {
+  presets.push(path.resolve(__dirname, './order/index.js'))
+}
+
 module.exports = {
   extends: presets,
 }

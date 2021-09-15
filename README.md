@@ -21,24 +21,9 @@ module.exports {
 }
 ```
 
-The ruleset will check up your node modules and enable available configurations automatically.
+The ruleset will check your project dependencies and enable available configurations automatically. This eliminates the need for you to know any specific ruleset configuration below.
 
-To force the configurations of certain packages, you can set the environment variable `NODE_MODULES`:
-
-```js
-// stylelint.config.js
-process.env.NODE_MODULES = `stylelint-scss@:${process.env.NODE_MODULES}`
-
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt/stylelint-config',
-  ],
-  // ...
-}
-```
-
-## Basic Usage
+## Basic Ruleset
 
 ```javascript
 // stylelint.config.js
@@ -55,7 +40,7 @@ Note: `stylelint-config-recommended` is not needed since `base` has extended the
 
 ### SCSS
 
-*Need to install `stylelint-scss` manually*
+*Need to install [`stylelint-scss`](https://www.npmjs.com/package/stylelint-scss) manually*
 
 ```javascript
 // stylelint.config.js
@@ -66,6 +51,45 @@ module.exports {
     '@cyansalt/stylelint-config/scss',
   ],
   // ...
+}
+```
+
+## Plugins
+
+We have provided a number of plugin configurations as our recommendation.
+
+### Aurora
+
+Various Stylelint rules in one plugin.
+
+*Need to install [`stylelint-plugin-aurora`](https://www.npmjs.com/package/stylelint-plugin-aurora) manually*
+
+```javascript
+// stylelint.config.js
+module.exports {
+  // ...
+  extends: [
+    '@cyansalt/stylelint-config/base',
+    '@cyansalt/stylelint-config/aurora/base',
+    // for SCSS
+    '@cyansalt/stylelint-config/aurora/scss',
+  ],
+}
+```
+
+### Order
+
+Autofix the property order of stylesheets.
+
+*Need to install [`stylelint-order`](https://www.npmjs.com/package/stylelint-order) manually*
+
+```javascript
+// stylelint.config.js
+module.exports {
+  // ...
+  extends: [
+    '@cyansalt/stylelint-config/order',
+  ],
 }
 ```
 

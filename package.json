@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\"",
+    "release": "release-it",
     "lint": "eslint --ignore-path .gitignore --fix ."
   },
   "repository": {
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "@cyansalt/eslint-config": "^1.13.0",
-    "eslint": "^7.32.0"
+    "@release-it/conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "release-it": "^14.11.6"
   }
 }

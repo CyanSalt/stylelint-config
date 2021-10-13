@@ -20,7 +20,7 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
-    "cosmiconfig": "^7.0.0",
+    "cosmiconfig": "^7.0.1",
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
     "stylelint-config-recommended": "^5.0.0",
@@ -30,9 +30,9 @@
     "stylelint": "^13.13.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^1.13.0",
+    "@cyansalt/eslint-config": "^2.0.1",
     "@release-it/conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "release-it": "^14.11.6"
   }
 }

@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/CyanSalt/stylelint-config/compare/v1.8.3...v2.0.0) (2021-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop supporting for v13
+
+### Features
+
+* upgrade to stylelint@14 ([66ee0eb](https://github.com/CyanSalt/stylelint-config/commit/66ee0ebd71b3e2ef5b4ac894136c26146ddc6289))
+
 ### [1.8.3](https://github.com/CyanSalt/stylelint-config/compare/v1.8.2...v1.8.3) (2021-09-23)
 
 

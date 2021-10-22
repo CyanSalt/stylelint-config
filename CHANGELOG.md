@@ -1,3 +1,10 @@
+### [2.0.1](https://github.com/CyanSalt/stylelint-config/compare/v2.0.0...v2.0.1) (2021-10-22)
+
+
+### Bug Fixes
+
+* downgrade postcss-html ([86641c6](https://github.com/CyanSalt/stylelint-config/commit/86641c698900ba5a3abd764e3c6d2d29bb56796e))
+
 ## [2.0.0](https://github.com/CyanSalt/stylelint-config/compare/v1.8.3...v2.0.0) (2021-10-22)
 
 

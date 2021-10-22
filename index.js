@@ -3,6 +3,7 @@ const { hasInstalledPackage } = require('./utils')
 
 const presets = [
   path.resolve(__dirname, './base.js'),
+  path.resolve(__dirname, './syntax.js'),
 ]
 
 if (hasInstalledPackage('stylelint-scss')) {

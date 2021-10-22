@@ -23,16 +23,16 @@
     "cosmiconfig": "^7.0.1",
     "find-up": "^5.0.0",
     "semver": "^7.3.5",
-    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-recommended": "^6.0.0",
     "yargs-parser": "^20.2.9"
   },
   "peerDependencies": {
-    "stylelint": "^13.13.0"
+    "stylelint": "^14.0.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^2.0.1",
+    "@cyansalt/eslint-config": "^2.0.4",
     "@release-it/conventional-changelog": "^3.3.0",
-    "eslint": "^8.0.0",
+    "eslint": "^8.0.1",
     "release-it": "^14.11.6"
   }
 }

@@ -1,3 +1,10 @@
+### [2.0.2](https://github.com/CyanSalt/stylelint-config/compare/v2.0.1...v2.0.2) (2021-10-27)
+
+
+### Bug Fixes
+
+* dot files ([5d7dbd1](https://github.com/CyanSalt/stylelint-config/commit/5d7dbd196e897b50d7cead99fa41eb047e4a3a3e))
+
 ### [2.0.1](https://github.com/CyanSalt/stylelint-config/compare/v2.0.0...v2.0.1) (2021-10-22)
 
 

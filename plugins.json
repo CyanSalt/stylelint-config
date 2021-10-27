@@ -24,10 +24,10 @@
     }
   },
   "stylelint": {
-    "version": "14.0.0"
+    "version": "14.0.1"
   },
   "stylelint-plugin-aurora": {
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "stylelint-order": {
     "version": "5.0.0"

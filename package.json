@@ -27,7 +27,7 @@
     "yargs-parser": "^20.2.9"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.0.1"
   },
   "devDependencies": {
     "@cyansalt/eslint-config": "^2.0.4",

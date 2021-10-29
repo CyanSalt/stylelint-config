@@ -7,6 +7,14 @@ module.exports = {
   rules: {
     'order/order': [
       [
+        {
+          type: 'at-rule',
+          name: 'use',
+        },
+        {
+          type: 'at-rule',
+          name: 'import',
+        },
         'dollar-variables',
         'custom-properties',
         'at-rules',
@@ -14,6 +22,10 @@ module.exports = {
         {
           type: 'at-rule',
           hasBlock: true,
+        },
+        {
+          type: 'at-rule',
+          name: 'return',
         },
         'rules',
       ],

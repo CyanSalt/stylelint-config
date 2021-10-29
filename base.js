@@ -14,8 +14,6 @@ module.exports = {
     'no-descending-specificity': null,
 
     /** Limit language features */
-    // 总是使用颜色名称
-    'color-named': 'always-where-possible',
     // 必须使用新的 rgb() 函数规范
     'color-function-notation': 'modern',
     // 自动优化属性为简写
@@ -46,8 +44,6 @@ module.exports = {
     /** Stylistic issues */
     // 十六进制颜色统一使用大写字母
     'color-hex-case': 'lower',
-    // 总是使用字重名称
-    'font-weight-notation': 'named-where-possible',
     // 自动删除函数调用参数列表中的换行
     'function-comma-newline-after': ['never-multi-line', { severity: 'warning' }],
     'function-comma-newline-before': ['never-multi-line', { severity: 'warning' }],

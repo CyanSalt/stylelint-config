@@ -1,3 +1,10 @@
+### [2.0.4](https://github.com/CyanSalt/stylelint-config/compare/v2.0.3...v2.0.4) (2021-10-29)
+
+
+### Bug Fixes
+
+* remove name limitations ([9bf7336](https://github.com/CyanSalt/stylelint-config/commit/9bf733623e354e79b23b18eeb7fd38223c38899d))
+
 ### [2.0.3](https://github.com/CyanSalt/stylelint-config/compare/v2.0.2...v2.0.3) (2021-10-29)
 
 

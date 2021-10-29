@@ -1,3 +1,10 @@
+### [2.0.3](https://github.com/CyanSalt/stylelint-config/compare/v2.0.2...v2.0.3) (2021-10-29)
+
+
+### Bug Fixes
+
+* order for at-rules ([361ad33](https://github.com/CyanSalt/stylelint-config/commit/361ad33aa374d7ca2b0e9c4e683377d0190575aa))
+
 ### [2.0.2](https://github.com/CyanSalt/stylelint-config/compare/v2.0.1...v2.0.2) (2021-10-27)
 
 

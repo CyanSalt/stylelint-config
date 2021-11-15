@@ -1,3 +1,10 @@
+## [2.1.0](https://github.com/CyanSalt/stylelint-config/compare/v2.0.4...v2.1.0) (2021-11-15)
+
+
+### Features
+
+* support yarn ([f365524](https://github.com/CyanSalt/stylelint-config/commit/f3655243e40d9325ddf24f33195125b260045f84))
+
 ### [2.0.4](https://github.com/CyanSalt/stylelint-config/compare/v2.0.3...v2.0.4) (2021-10-29)
 
 

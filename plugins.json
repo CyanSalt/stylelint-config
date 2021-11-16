@@ -6,7 +6,7 @@
     }
   },
   "postcss-html": {
-    "version": "^0.36.0",
+    "version": ">=1.2.0",
     "requires": {
       "vue": "*"
     }
@@ -17,14 +17,8 @@
       "sass": "*"
     }
   },
-  "postcss-syntax": {
-    "version": ">=0.36.0",
-    "requires": {
-      "vue": "*"
-    }
-  },
   "stylelint": {
-    "version": "14.0.1"
+    "version": "14.1.0"
   },
   "stylelint-plugin-aurora": {
     "version": "1.0.3"

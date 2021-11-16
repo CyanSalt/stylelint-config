@@ -1,3 +1,10 @@
+### [2.1.1](https://github.com/CyanSalt/stylelint-config/compare/v2.1.0...v2.1.1) (2021-11-16)
+
+
+### Bug Fixes
+
+* bump deps ([8cdf397](https://github.com/CyanSalt/stylelint-config/commit/8cdf397164e7fdac852d4e3cbe376b9e42378c1a))
+
 ## [2.1.0](https://github.com/CyanSalt/stylelint-config/compare/v2.0.4...v2.1.0) (2021-11-15)
 
 

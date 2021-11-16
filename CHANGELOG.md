@@ -1,3 +1,10 @@
+### [2.1.2](https://github.com/CyanSalt/stylelint-config/compare/v2.1.1...v2.1.2) (2021-11-16)
+
+
+### Bug Fixes
+
+* add alias y to yes ([69f0577](https://github.com/CyanSalt/stylelint-config/commit/69f0577f1c7b9e3397dbc77a5c480f22c071bb5d))
+
 ### [2.1.1](https://github.com/CyanSalt/stylelint-config/compare/v2.1.0...v2.1.1) (2021-11-16)
 
 

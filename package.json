@@ -1,6 +1,6 @@
 {
   "name": "@cyansalt/stylelint-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "My Stylelint configuration",
   "bin": "scripts/cli.js",
   "main": "index.js",

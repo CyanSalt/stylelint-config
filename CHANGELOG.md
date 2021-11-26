@@ -1,3 +1,10 @@
+### [2.1.3](https://github.com/CyanSalt/stylelint-config/compare/v2.1.2...v2.1.3) (2021-11-26)
+
+
+### Bug Fixes
+
+* vendors supporting ([75322aa](https://github.com/CyanSalt/stylelint-config/commit/75322aa3ba737d1316462383f6b38b74c8af1708))
+
 ### [2.1.2](https://github.com/CyanSalt/stylelint-config/compare/v2.1.1...v2.1.2) (2021-11-16)
 
 

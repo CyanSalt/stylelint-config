@@ -7,9 +7,35 @@ module.exports = {
     // 不启用强制字体使用关键字回退
     'font-family-no-missing-generic-family-keyword': null,
     // 允许 export 等特殊作用的伪类
-    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['deep', 'export', 'global'] }],
+    'selector-pseudo-class-no-unknown': [true, {
+      ignorePseudoClasses: [
+        // CSSOM
+        'export',
+        // Vue
+        'deep',
+        'global',
+        // Webkit & Blink Scrollbar
+        // https://webkit.org/blog/363/styling-scrollbars/
+        'horizontal',
+        'vertical',
+        'decrement',
+        'increment',
+        'start',
+        'end',
+        'double-button',
+        'single-button',
+        'no-button',
+        'corner-present',
+        'window-inactive',
+      ],
+    }],
     // 允许 v-deep 等特殊作用的伪元素
-    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep', 'v-global'] }],
+    'selector-pseudo-element-no-unknown': [true, {
+      ignorePseudoElements: [
+        // Vue
+        'v-deep',
+      ],
+    }],
     // 不启用严格顺序覆盖检查
     'no-descending-specificity': null,
 
@@ -19,11 +45,24 @@ module.exports = {
     // 自动优化属性为简写
     'shorthand-property-no-redundant-values': [true, { severity: 'warning' }],
     // 禁止属性值使用私有前缀
-    'value-no-vendor-prefix': [true, { ignoreValues: ['box', 'inline-box'] }],
+    'value-no-vendor-prefix': [true, {
+      ignoreValues: [
+        // Webkit box
+        'box',
+        'inline-box',
+      ],
+    }],
     // 禁止使用某些属性（通常是书写错误）
     'property-disallowed-list': ['widows'],
     // 禁止属性名使用私有前缀
-    'property-no-vendor-prefix': [true, { ignoreProperties: ['box-orient'] }],
+    'property-no-vendor-prefix': [true, {
+      ignoreProperties: [
+        // Webkit box
+        'box-orient',
+        // Webkit text background
+        'background-clip',
+      ],
+    }],
     // 单个规则块的选择器之间禁止空行
     'selector-max-empty-lines': 0,
     // 禁止通配符嵌套

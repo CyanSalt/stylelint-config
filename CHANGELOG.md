@@ -1,3 +1,10 @@
+### [2.1.4](https://github.com/CyanSalt/stylelint-config/compare/v2.1.3...v2.1.4) (2021-11-29)
+
+
+### Bug Fixes
+
+* allow pseudo classes ([7be8b3a](https://github.com/CyanSalt/stylelint-config/commit/7be8b3a5c6c39b7845250e22fb7821cb48ed841c))
+
 ### [2.1.3](https://github.com/CyanSalt/stylelint-config/compare/v2.1.2...v2.1.3) (2021-11-26)
 
 

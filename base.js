@@ -9,7 +9,7 @@ module.exports = {
     // 允许 export 等特殊作用的伪类
     'selector-pseudo-class-no-unknown': [true, {
       ignorePseudoClasses: [
-        // CSSOM
+        // ICSS
         'export',
         // Vue
         'deep',

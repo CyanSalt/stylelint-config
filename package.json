@@ -2,10 +2,8 @@
   "name": "@cyansalt/stylelint-config",
   "version": "2.1.5",
   "description": "My Stylelint configuration",
-  "bin": "scripts/cli.js",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node -e \"try{require('./scripts/postinstall')}catch(e){}\"",
     "release": "release-it",
     "lint": "eslint --ignore-path .gitignore --fix ."
   },
@@ -20,19 +18,28 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
-    "cosmiconfig": "^7.0.1",
-    "find-up": "^5.0.0",
-    "semver": "^7.3.5",
-    "stylelint-config-recommended": "^6.0.0",
-    "yargs-parser": "^20.2.9"
+    "stylelint-config-recommended": "^6.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.1"
+    "stylelint": ">=14.0.1",
+    "stylelint-order": ">=5.0.0",
+    "stylelint-plugin-aurora": ">=1.0.1",
+    "stylelint-scss": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "stylelint-order": {
+      "optional": true
+    },
+    "stylelint-plugin-aurora": {
+      "optional": true
+    },
+    "stylelint-scss": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^2.0.4",
+    "@cyansalt/eslint-config-preset": "^1.0.0",
     "@release-it/conventional-changelog": "^3.3.0",
-    "eslint": "^8.0.1",
-    "release-it": "^14.11.6"
+    "release-it": "^14.11.8"
   }
 }

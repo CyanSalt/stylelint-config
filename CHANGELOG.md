@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/CyanSalt/stylelint-config/compare/v2.1.5...v3.0.0) (2021-12-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove auto ruleset
+
+### Features
+
+* normalize config presets ([edf9d32](https://github.com/CyanSalt/stylelint-config/commit/edf9d32edd80744cb188310121b45be9d1ca9fb8))
+
 ### [2.1.5](https://github.com/CyanSalt/stylelint-config/compare/v2.1.4...v2.1.5) (2021-12-14)
 
 

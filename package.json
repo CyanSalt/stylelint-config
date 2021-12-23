@@ -1,7 +1,7 @@
 {
   "name": "@cyansalt/stylelint-config",
   "version": "3.0.0",
-  "description": "My Stylelint configuration",
+  "description": "My Stylelint base configuration",
   "main": "index.js",
   "scripts": {
     "release": "release-it",

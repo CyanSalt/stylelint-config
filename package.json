@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "My Stylelint base configuration",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "release": "release-it",
     "lint": "eslint --ignore-path .gitignore --fix ."

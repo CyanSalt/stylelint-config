@@ -77,8 +77,8 @@ module.exports = {
     'at-rule-property-required-list': {
       'font-face': ['font-family', 'src'],
     },
-    // 禁止嵌套超过三层
-    'max-nesting-depth': [3, { ignore: ['blockless-at-rules', 'pseudo-classes'] }],
+    // 禁止嵌套超过 4 层
+    'max-nesting-depth': [4, { ignore: ['blockless-at-rules', 'pseudo-classes'] }],
 
     /** Stylistic issues */
     // 十六进制颜色统一使用大写字母

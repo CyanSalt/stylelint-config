@@ -1,3 +1,10 @@
+### [3.0.1](https://github.com/CyanSalt/stylelint-config/compare/v3.0.0...v3.0.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* update max nesting depth ([55b91b7](https://github.com/CyanSalt/stylelint-config/commit/55b91b784f34a2297ed11413223811507acb20bb))
+
 ## [3.0.0](https://github.com/CyanSalt/stylelint-config/compare/v2.1.5...v3.0.0) (2021-12-23)
 
 

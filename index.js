@@ -117,7 +117,7 @@ module.exports = {
     'value-list-comma-space-after': ['always-single-line', { severity: 'warning' }],
     'value-list-comma-space-before': ['never', { severity: 'warning' }],
     // 属性名必须使用小写
-    'property-case': 'lower',
+    'property-case': ['lower', { ignoreSelectors: [':export'] }],
     // !important之间禁止使用空格
     'declaration-bang-space-after': 'never',
     // 自动在 !important 前添加空格

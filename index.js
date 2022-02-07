@@ -109,7 +109,7 @@ module.exports = {
     // 单位必须使用小写
     'unit-case': 'lower',
     // 关键字必须使用小写
-    'value-keyword-case': 'lower',
+    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
     // 自动优化多个属性值换行为逗号后换行
     'value-list-comma-newline-after': ['always-multi-line', { severity: 'warning' }],
     'value-list-comma-newline-before': ['never-multi-line', { severity: 'warning' }],

@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/CyanSalt/stylelint-config/compare/v3.0.1...v3.1.0) (2022-02-07)
+
+
+### Features
+
+* update `stylelint` ([6cb9292](https://github.com/CyanSalt/stylelint-config/commit/6cb929292f1ef0c6b94f09e14bef3412ad53b3dc))
+
 ### [3.0.1](https://github.com/CyanSalt/stylelint-config/compare/v3.0.0...v3.0.1) (2022-01-24)
 
 

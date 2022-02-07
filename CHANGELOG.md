@@ -1,3 +1,10 @@
+### [3.1.1](https://github.com/CyanSalt/stylelint-config/compare/v3.1.0...v3.1.1) (2022-02-07)
+
+
+### Bug Fixes
+
+* `currentColor` ([7995fac](https://github.com/CyanSalt/stylelint-config/commit/7995fac3c6c4c692939e2d4a0656451e2840d0b4))
+
 ## [3.1.0](https://github.com/CyanSalt/stylelint-config/compare/v3.0.1...v3.1.0) (2022-02-07)
 
 

@@ -6,6 +6,8 @@ module.exports = {
     /** Possible errors */
     // 不启用强制字体使用关键字回退
     'font-family-no-missing-generic-family-keyword': null,
+    // 允许未知的函数
+    'function-no-unknown': null,
     // 禁止 keyframes 内定义重复的选择器
     'keyframe-block-no-duplicate-selectors': true,
     // 允许 export 等特殊作用的伪类

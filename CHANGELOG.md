@@ -1,3 +1,17 @@
+
+
+## [3.2.0](https://github.com/CyanSalt/stylelint-config/compare/v3.1.1...v3.2.0) (2022-05-07)
+
+
+### Features
+
+* add `keyframe-block-no-duplicate-selectors` ([a283402](https://github.com/CyanSalt/stylelint-config/commit/a28340293cf974a3a93178a79936b31af58829c1))
+
+
+### Bug Fixes
+
+* update config preset ([77d8ffd](https://github.com/CyanSalt/stylelint-config/commit/77d8ffd092c7069c59c48ce11e64a2f31af42164))
+
 ### [3.1.1](https://github.com/CyanSalt/stylelint-config/compare/v3.1.0...v3.1.1) (2022-02-07)
 
 
@@ -287,4 +301,3 @@
 ### Features
 
 * init ([ebb837d](https://github.com/CyanSalt/stylelint-config/commit/ebb837dd2e0987747b5e419cde610298f35c189a))
-

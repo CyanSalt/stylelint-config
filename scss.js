@@ -7,8 +7,11 @@ module.exports = {
     // 允许 SCSS 的 at-rule
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
-    // 允许 @use 出现在 @import 之前
-    'no-invalid-position-at-import-rule': [true, { ignoreAtRules: ['use'] }],
+    // 支持 SCSS 的注释
+    'comment-no-empty': null,
+    'scss/comment-no-empty': true,
+    // 允许 @use 和 @forward 出现在 @import 之前
+    'no-invalid-position-at-import-rule': [true, { ignoreAtRules: ['use', 'forward'] }],
 
     // 自动删除 @function 函数名后的空格
     'scss/at-function-parentheses-space-before': ['never', { severity: 'warning' }],

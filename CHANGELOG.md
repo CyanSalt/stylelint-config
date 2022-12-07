@@ -1,5 +1,12 @@
 
 
+### [3.3.1](https://github.com/CyanSalt/stylelint-config/compare/v3.3.0...v3.3.1) (2022-12-07)
+
+
+### Bug Fixes
+
+* allow !default in sass ([5e56ad5](https://github.com/CyanSalt/stylelint-config/commit/5e56ad50805da3fdcdb12aa1ba89c8c35b100b81))
+
 ## [3.3.0](https://github.com/CyanSalt/stylelint-config/compare/v3.2.1...v3.3.0) (2022-12-06)
 
 

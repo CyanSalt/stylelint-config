@@ -12,8 +12,6 @@ module.exports = {
     'font-family-no-missing-generic-family-keyword': null,
     // 禁止 !important 之外的标注
     'annotation-no-unknown': true,
-    // 允许未知的函数
-    'function-no-unknown': null,
     // 允许 export 等特殊作用的伪类
     'selector-pseudo-class-no-unknown': [true, {
       ignorePseudoClasses: [

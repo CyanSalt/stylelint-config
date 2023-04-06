@@ -2,6 +2,8 @@ module.exports = {
   extends: [
     'stylelint-config-recommended',
   ],
+  reportInvalidScopeDisables: true,
+  reportNeedlessDisables: true,
   rules: {
     /** Avoid errors */
     // 不启用严格顺序覆盖检查

@@ -1,5 +1,17 @@
 
 
+## [3.4.0](https://github.com/CyanSalt/stylelint-config/compare/v3.3.1...v3.4.0) (2023-05-09)
+
+
+### Features
+
+* report disables ([2f4b934](https://github.com/CyanSalt/stylelint-config/commit/2f4b9343c70e28af2b02a63c59e0a8b39f2889b6))
+
+
+### Bug Fixes
+
+* add inset order ([49bbee1](https://github.com/CyanSalt/stylelint-config/commit/49bbee199ca4bfc2bb3c84300defaf68b84c1387))
+
 ### [3.3.1](https://github.com/CyanSalt/stylelint-config/compare/v3.3.0...v3.3.1) (2022-12-07)
 
 

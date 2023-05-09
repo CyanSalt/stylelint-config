@@ -1,5 +1,7 @@
 # @cyansalt/stylelint-config
 
+[![npm](https://img.shields.io/npm/v/@cyansalt/stylelint-config.svg)](https://www.npmjs.com/package/@cyansalt/stylelint-config)
+
 My Stylelint base configuration.
 
 ## Installation

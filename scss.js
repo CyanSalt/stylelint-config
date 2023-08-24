@@ -35,7 +35,7 @@ module.exports = {
     // 操作符两侧必须添加空格
     'scss/operator-no-unspaced': true,
     // 禁止在同一个块内重复定义变量
-    'scss/no-duplicate-dollar-variables': true,
+    'scss/no-duplicate-dollar-variables': [true, { ignoreInside: ['at-rule'] }],
     // 禁止在同一个块内重复定义 Mixin
     'scss/no-duplicate-mixins': true,
   },

@@ -1,5 +1,12 @@
 
 
+### [3.4.1](https://github.com/CyanSalt/stylelint-config/compare/v3.4.0...v3.4.1) (2023-08-24)
+
+
+### Bug Fixes
+
+* ignore at-rule overrides ([7754021](https://github.com/CyanSalt/stylelint-config/commit/7754021d988ac4325624998ffbb48dd0888a5c32))
+
 ## [3.4.0](https://github.com/CyanSalt/stylelint-config/compare/v3.3.1...v3.4.0) (2023-05-09)
 
 

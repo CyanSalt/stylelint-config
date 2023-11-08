@@ -1,5 +1,12 @@
 
 
+## [3.5.1](https://github.com/CyanSalt/stylelint-config/compare/v3.5.0...v3.5.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* scss values ([3a06940](https://github.com/CyanSalt/stylelint-config/commit/3a06940ab229b157fea29c2717bd7395f8762b84))
+
 ## [3.5.0](https://github.com/CyanSalt/stylelint-config/compare/v3.4.1...v3.5.0) (2023-11-08)
 
 

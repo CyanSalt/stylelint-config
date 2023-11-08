@@ -25,13 +25,14 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
-    "stylelint-config-recommended": "^7.0.0"
+    "stylelint-config-recommended": "^13.0.0"
   },
   "peerDependencies": {
-    "stylelint": ">=14.10.0",
+    "stylelint": ">=15.8.0",
     "stylelint-order": ">=5.0.0",
     "stylelint-plugin-aurora": ">=1.0.1",
-    "stylelint-scss": ">=4.0.0"
+    "stylelint-scss": ">=4.4.0",
+    "stylelint-stylistic": ">=0.4.3"
   },
   "peerDependenciesMeta": {
     "stylelint-order": {
@@ -45,8 +46,8 @@
     }
   },
   "devDependencies": {
-    "@cyansalt/eslint-config-preset": "^1.5.1",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "release-it": "^15.5.1"
+    "@cyansalt/eslint-config-preset": "^1.16.2",
+    "@release-it/conventional-changelog": "^7.0.2",
+    "release-it": "^16.2.1"
   }
 }

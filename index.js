@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'stylelint-config-recommended',
+    require.resolve('./stylistic.js'),
   ],
   reportInvalidScopeDisables: true,
   reportNeedlessDisables: true,
@@ -8,12 +9,12 @@ module.exports = {
     /** Avoid errors */
     // 不启用严格顺序覆盖检查
     'no-descending-specificity': null,
-    // 禁止 keyframes 内定义重复的选择器
-    'keyframe-block-no-duplicate-selectors': true,
     // 不启用强制字体使用关键字回退
     'font-family-no-missing-generic-family-keyword': null,
-    // 禁止 !important 之外的标注
-    'annotation-no-unknown': true,
+    // 禁止定义非 CSS 规范的属性值
+    'declaration-property-value-no-unknown': true,
+    // 禁止定义非 CSS 规范的 media query 值
+    'media-feature-name-value-no-unknown': true,
     // 允许 export 等特殊作用的伪类
     'selector-pseudo-class-no-unknown': [true, {
       ignorePseudoClasses: [
@@ -90,132 +91,16 @@ module.exports = {
     // 自动优化属性为简写
     'shorthand-property-no-redundant-values': [true, { severity: 'warning' }],
 
-    /** Enforce stylistic conventions */
-    // 关键字必须使用小写
-    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
+    /** Enforce conventions */
     // 函数名必须使用小写字母
     'function-name-case': 'lower',
     // 标签选择器必须使用小写
     'selector-type-case': 'lower',
-    // 自动在注释边界添加空格
-    'comment-whitespace-inside': ['always', { severity: 'warning' }],
-    // 十六进制颜色统一使用小写字母
-    'color-hex-case': 'lower',
-    // 自动删除函数调用参数列表中的换行
-    'function-comma-newline-after': ['never-multi-line', { severity: 'warning' }],
-    'function-comma-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动在函数调用的参数逗号后添加空格
-    'function-comma-space-after': ['always-single-line', { severity: 'warning' }],
-    'function-comma-space-before': ['never', { severity: 'warning' }],
-    // 函数内禁止出现空行
-    'function-max-empty-lines': 0,
-    // 单个规则块的选择器之间禁止空行
-    'selector-max-empty-lines': 0,
-    // 自动删除函数调用的括号内的换行和空格
-    'function-parentheses-newline-inside': ['never-multi-line', { severity: 'warning' }],
-    'function-parentheses-space-inside': ['never', { severity: 'warning' }],
-    // 自动在多个函数之间添加空格
-    'function-whitespace-after': ['always', { severity: 'warning' }],
-    // 禁止省略小数点的前导0
-    'number-leading-zero': 'always',
-    // 自动删除小数点后多余的0
-    'number-no-trailing-zeros': [true, { severity: 'warning' }],
-    // 自动替换引号为单引号
-    'string-quotes': ['single', { severity: 'warning' }],
-    // 单位必须使用小写
-    'unit-case': 'lower',
-    // 自动优化多个属性值换行为逗号后换行
-    'value-list-comma-newline-after': ['always-multi-line', { severity: 'warning' }],
-    'value-list-comma-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动优化空格于多个属性值间的逗号后
-    'value-list-comma-space-after': ['always-single-line', { severity: 'warning' }],
-    'value-list-comma-space-before': ['never', { severity: 'warning' }],
-    // 属性名必须使用小写
-    'property-case': ['lower', { ignoreSelectors: [':export'] }],
-    // !important之间禁止使用空格
-    'declaration-bang-space-after': 'never',
-    // 自动在 !important 前添加空格
-    'declaration-bang-space-before': ['always', { severity: 'warning' }],
-    // 自动优化空格于声明的冒号后
-    'declaration-colon-space-after': ['always-single-line', { severity: 'warning' }],
-    'declaration-colon-space-before': ['never', { severity: 'warning' }],
-    // 自动优化为分号后添加换行
-    'declaration-block-semicolon-newline-after': ['always', { severity: 'warning' }],
-    'declaration-block-semicolon-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动删除分号前的空格
-    'declaration-block-semicolon-space-before': ['never', { severity: 'warning' }],
-    // 自动为规则块添加尾随分号
-    'declaration-block-trailing-semicolon': ['always', { severity: 'warning' }],
-    // 自动删除块结尾的空行
-    'block-closing-brace-empty-line-before': ['never', { severity: 'warning' }],
-    // 自动优化块的花括号为 One True 风格
-    'block-closing-brace-newline-after': ['always', { severity: 'warning' }],
-    'block-closing-brace-newline-before': ['always', { severity: 'warning' }],
-    'block-opening-brace-newline-after': ['always', { severity: 'warning' }],
-    // 'block-opening-brace-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动在块的花括号前添加空格
-    'block-opening-brace-space-before': ['always', { severity: 'warning' }],
-    // 自动去除属性选择器的方括号内的空格
-    'selector-attribute-brackets-space-inside': ['never', { severity: 'warning' }],
-    // 自动去除属性选择器运算符两侧的空格
-    'selector-attribute-operator-space-after': ['never', { severity: 'warning' }],
-    'selector-attribute-operator-space-before': ['never', { severity: 'warning' }],
+    // 关键字必须使用小写
+    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
     // 属性选择器的取值必须加引号
     'selector-attribute-quotes': 'always',
-    // 自动在选择器连接符（>/+/~）两侧添加空格
-    'selector-combinator-space-after': ['always', { severity: 'warning' }],
-    'selector-combinator-space-before': ['always', { severity: 'warning' }],
-    // 禁止后代选择器使用空格之外的空白字符作为分隔
-    'selector-descendant-combinator-no-non-space': true,
-    // 伪类必须使用小写
-    'selector-pseudo-class-case': 'lower',
-    // 自动删除伪类选择器参数括号内部的空格
-    'selector-pseudo-class-parentheses-space-inside': ['never', { severity: 'warning' }],
-    // 伪元素必须使用小写
-    'selector-pseudo-element-case': 'lower',
-    // 自动删除选择器列表逗号前的换行
-    'selector-list-comma-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动为选择器列表的逗号后添加空格
-    'selector-list-comma-space-after': ['always-single-line', { severity: 'warning' }],
-    // 自动删除选择器列表逗号后的空格
-    'selector-list-comma-space-before': ['never', { severity: 'warning' }],
-    // 自动优化空格于媒体查询条件的冒号后
-    'media-feature-colon-space-after': ['always', { severity: 'warning' }],
-    'media-feature-colon-space-before': ['never', { severity: 'warning' }],
-    // 媒体查询条件的属性必须使用小写
-    'media-feature-name-case': 'lower',
-    // 自动删除媒体查询条件括号内侧的空格
-    'media-feature-parentheses-space-inside': ['never', { severity: 'warning' }],
-    // 自动删除媒体查询条件范围运算符两侧的空格
-    'media-feature-range-operator-space-after': ['always', { severity: 'warning' }],
-    'media-feature-range-operator-space-before': ['always', { severity: 'warning' }],
-    // 自动删除媒体查询列表逗号前的换行
-    'media-query-list-comma-newline-before': ['never-multi-line', { severity: 'warning' }],
-    // 自动为媒体查询列表的逗号后添加空格
-    'media-query-list-comma-space-after': ['always-single-line', { severity: 'warning' }],
-    // 自动删除媒体查询列表逗号后的空格
-    'media-query-list-comma-space-before': ['never', { severity: 'warning' }],
-    // @规则名必须使用小写
-    'at-rule-name-case': 'lower',
-    // 自动在@规则名后添加空格
-    'at-rule-name-space-after': ['always', { severity: 'warning' }],
-    // 自动在@规则的分号后换行
-    'at-rule-semicolon-newline-after': ['always', { severity: 'warning' }],
-    // 自动删除@规则分号前的空格
-    'at-rule-semicolon-space-before': ['never', { severity: 'warning' }],
-    // 自动优化缩进为两个空格
-    indentation: [2, { baseIndentLevel: 0, severity: 'warning' }],
-    // 自动替换换行为 LF
-    linebreaks: ['unix', { severity: 'warning' }],
-    // 自动删除超过一个的连续空行
-    'max-empty-lines': [1, { severity: 'warning' }],
-    // 自动删除文件开头的空行
-    'no-empty-first-line': [true, { severity: 'warning' }],
-    // 自动删除行尾空格
-    'no-eol-whitespace': [true, { severity: 'warning' }],
-    // 自动在文件结尾添加空行
-    'no-missing-end-of-source-newline': [true, { severity: 'warning' }],
-    // 自动删除 Unicode BOM 头
-    'unicode-bom': ['never', { severity: 'warning' }],
+    // 自动在注释边界添加空格
+    'comment-whitespace-inside': ['always', { severity: 'warning' }],
   },
 }

@@ -18,6 +18,10 @@ module.exports = {
     'annotation-no-unknown': [true, {
       ignoreAnnotations: ['default'],
     }],
+    // 允许在属性值中插入 SCSS 表达式
+    'declaration-property-value-no-unknown': null,
+    // 允许在 media query 值中插入 SCSS 表达式
+    'media-feature-name-value-no-unknown': null,
 
     // 自动删除 @function 函数名后的空格
     'scss/at-function-parentheses-space-before': ['never', { severity: 'warning' }],

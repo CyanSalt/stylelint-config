@@ -38,6 +38,7 @@ const box = [
   'grid-column-start',
   'grid-column-end',
 
+  'place-self',
   'justify-self',
   'align-self',
   'order',
@@ -66,6 +67,8 @@ const box = [
   'column-gap',
 
   // Flex/grid alignment
+  'place-content',
+  'place-items',
   'justify-content',
   'justify-items',
   'align-content',

@@ -1,5 +1,12 @@
 
 
+## [3.5.0](https://github.com/CyanSalt/stylelint-config/compare/v3.4.1...v3.5.0) (2023-11-08)
+
+
+### Features
+
+* upgrade to stylelint 15 ([b11a50e](https://github.com/CyanSalt/stylelint-config/commit/b11a50efb0ce55516aad55e686402a942cbdd04a))
+
 ### [3.4.1](https://github.com/CyanSalt/stylelint-config/compare/v3.4.0...v3.4.1) (2023-08-24)
 
 

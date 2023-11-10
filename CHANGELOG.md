@@ -1,5 +1,12 @@
 
 
+## [3.5.2](https://github.com/CyanSalt/stylelint-config/compare/v3.5.1...v3.5.2) (2023-11-10)
+
+
+### Bug Fixes
+
+* peer deps ([652f7aa](https://github.com/CyanSalt/stylelint-config/commit/652f7aaa876024e9c8806187c43f9b8923562c86))
+
 ## [3.5.1](https://github.com/CyanSalt/stylelint-config/compare/v3.5.0...v3.5.1) (2023-11-08)
 
 

@@ -1,10 +1,12 @@
 import { defineConfig } from '../config.js'
 import { GLOB_ALL } from '../globs.js'
+import order from './order.js'
 import stylistic from './stylistic.js'
 
 export default defineConfig(options => {
   return [
     ...stylistic(options),
+    ...order(options),
     {
       files: [GLOB_ALL],
       extends: [

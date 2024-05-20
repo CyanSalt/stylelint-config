@@ -31,8 +31,8 @@ export default {
   overrides: config({
 
     // Whether to enable SCSS rules.
-    // It will be enabled when `scss` is installed in the project by default.
-    react: true,
+    // It will be enabled when `sass` or `sass-embedded` is installed in the project by default.
+    scss: true,
 
   }),
 }

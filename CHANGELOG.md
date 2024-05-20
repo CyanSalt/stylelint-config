@@ -1,5 +1,12 @@
 
 
+## [4.0.1](https://github.com/CyanSalt/stylelint-config/compare/v4.0.0...v4.0.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* scss package ([e2e4749](https://github.com/CyanSalt/stylelint-config/commit/e2e4749225a1a1fc196ae18550c6503d7a923e3b))
+
 ## [4.0.0](https://github.com/CyanSalt/stylelint-config/compare/v3.5.2...v4.0.0) (2024-05-20)
 
 

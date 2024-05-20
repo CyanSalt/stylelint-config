@@ -1,5 +1,16 @@
 
 
+## [4.0.0](https://github.com/CyanSalt/stylelint-config/compare/v3.5.2...v4.0.0) (2024-05-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* use overrides as config
+
+### Features
+
+* use overrides as config ([76f7824](https://github.com/CyanSalt/stylelint-config/commit/76f78244f50482da59436068c26263d6cdaa6c79))
+
 ## [3.5.2](https://github.com/CyanSalt/stylelint-config/compare/v3.5.1...v3.5.2) (2023-11-10)
 
 

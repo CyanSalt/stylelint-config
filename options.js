@@ -25,7 +25,7 @@ import { isPackageExists } from 'local-pkg'
  * @returns {Options['scss']}
  */
 export function resolveScss() {
-  return isPackageExists('scss')
+  return isPackageExists('sass') || isPackageExists('sass-embedded')
 }
 
 /**

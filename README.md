@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/@cyansalt/stylelint-config.svg)](https://www.npmjs.com/package/@cyansalt/stylelint-config)
 
-My Stylelint base configuration.
+My Stylelint configuration preset.
 
 ## Installation
 
@@ -12,70 +12,28 @@ npm install --save-dev @cyansalt/stylelint-config
 
 ## Usage
 
-### Basic Ruleset
-
 ```javascript
 // stylelint.config.js
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt/stylelint-config',
-    // for Vue and SCSS
-    '@cyansalt/stylelint-config/syntax',
-  ],
-  // ...
+import config from '@cyansalt/stylelint-config'
+
+export default {
+  overrides: config(),
 }
 ```
 
-Note: `stylelint-config-recommended` is not needed since it has been extended by default.
-
-### SCSS
+## Options
 
 ```javascript
 // stylelint.config.js
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt/stylelint-config',
-    '@cyansalt/stylelint-config/syntax',
-    '@cyansalt/stylelint-config/scss',
-  ],
-  // ...
-}
-```
+import config from '@cyansalt/stylelint-config'
 
-### Plugins
+export default {
+  overrides: config({
 
-We have provided a number of plugin configurations as our recommendation.
+    // Whether to enable SCSS rules.
+    // It will be enabled when `scss` is installed in the project by default.
+    react: true,
 
-#### Aurora
-
-Various Stylelint rules in one plugin.
-
-```javascript
-// stylelint.config.js
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt/stylelint-config',
-    '@cyansalt/stylelint-config/aurora',
-    // for SCSS
-    '@cyansalt/stylelint-config/aurora/scss',
-  ],
-}
-```
-
-#### Order
-
-Autofix the property order of stylesheets.
-
-```javascript
-// stylelint.config.js
-module.exports {
-  // ...
-  extends: [
-    '@cyansalt/stylelint-config',
-    '@cyansalt/stylelint-config/order',
-  ],
+  }),
 }
 ```

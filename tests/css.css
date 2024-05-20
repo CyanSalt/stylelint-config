@@ -1,0 +1,8 @@
+.foo {
+  height: 20px;
+  width: 20px;
+  /* stylelint-disable-next-line @stylistic/property-case */
+  DISPLAY: block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  widows: 2;
+}

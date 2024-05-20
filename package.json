@@ -1,14 +1,13 @@
 {
   "name": "@cyansalt/stylelint-config",
   "version": "3.5.2",
-  "description": "My Stylelint base configuration",
+  "description": "My Stylelint configuration preset",
+  "type": "module",
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "release": "release-it",
-    "lint": "eslint --fix './**/*.{js,mjs}'"
+    "lint": "eslint --fix './**/*.{js,mjs}'",
+    "test": "stylelint ./tests"
   },
   "repository": {
     "type": "git",
@@ -25,29 +24,21 @@
   "author": "CyanSalt",
   "license": "ISC",
   "dependencies": {
-    "stylelint-config-recommended": "^13.0.0"
-  },
-  "peerDependencies": {
-    "stylelint": ">=15.8.0",
-    "stylelint-order": ">=5.0.0",
-    "stylelint-plugin-aurora": ">=1.0.4",
-    "stylelint-scss": ">=4.4.0",
-    "stylelint-stylistic": ">=0.4.3"
-  },
-  "peerDependenciesMeta": {
-    "stylelint-order": {
-      "optional": true
-    },
-    "stylelint-plugin-aurora": {
-      "optional": true
-    },
-    "stylelint-scss": {
-      "optional": true
-    }
+    "@stylistic/stylelint-plugin": "^2.1.2",
+    "local-pkg": "^0.5.0",
+    "postcss": "^8.4.38",
+    "postcss-html": "^1.7.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.5.0",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-plugin-aurora": "^2.0.0",
+    "stylelint-scss": "^6.3.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^4.0.0",
+    "@cyansalt/eslint-config": "^4.0.1",
     "@release-it/conventional-changelog": "^8.0.1",
-    "release-it": "^17.0.0"
+    "release-it": "^17.2.1",
+    "scss": "^0.2.4"
   }
 }

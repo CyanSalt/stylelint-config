@@ -1,5 +1,12 @@
 
 
+## [4.0.3](https://github.com/CyanSalt/stylelint-config/compare/v4.0.2...v4.0.3) (2024-05-22)
+
+
+### Bug Fixes
+
+* stylelint as peer dep ([a6c369c](https://github.com/CyanSalt/stylelint-config/commit/a6c369cdcc065fcad7e74015ec41639951bb5a06))
+
 ## [4.0.2](https://github.com/CyanSalt/stylelint-config/compare/v4.0.1...v4.0.2) (2024-05-20)
 
 

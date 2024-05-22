@@ -29,7 +29,6 @@
     "postcss": "^8.4.38",
     "postcss-html": "^1.7.0",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^16.5.0",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-plugin-aurora": "^2.0.0",
@@ -39,6 +38,10 @@
     "@cyansalt/eslint-config": "^4.0.1",
     "@release-it/conventional-changelog": "^8.0.1",
     "release-it": "^17.2.1",
-    "sass": "^1.77.2"
+    "sass": "^1.77.2",
+    "stylelint": "^16.5.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=16.0.0"
   }
 }

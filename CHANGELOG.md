@@ -1,5 +1,12 @@
 
 
+## [4.0.4](https://github.com/CyanSalt/stylelint-config/compare/v4.0.3...v4.0.4) (2024-06-07)
+
+
+### Bug Fixes
+
+* validate more property values ([148b3d7](https://github.com/CyanSalt/stylelint-config/commit/148b3d74f45308d0d7d90a806ec263c788ccdd42))
+
 ## [4.0.3](https://github.com/CyanSalt/stylelint-config/compare/v4.0.2...v4.0.3) (2024-05-22)
 
 

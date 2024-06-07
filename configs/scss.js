@@ -30,7 +30,20 @@ export default defineConfig(options => {
           ignoreAnnotations: ['default'],
         }],
         // 允许在属性值中插入 SCSS 表达式
-        'declaration-property-value-no-unknown': null,
+        'declaration-property-value-no-unknown': [true, {
+          ignoreProperties: {
+            '/.+/': [
+              // Variables
+              '/\\$/',
+              // Interpolation
+              '/#/',
+              // Functions
+              '/\\([^)]*\\)/',
+              // Operators
+              '/\\s[+\\-*%]\\s/',
+            ],
+          },
+        }],
         // 允许在 media query 值中插入 SCSS 表达式
         'media-feature-name-value-no-unknown': null,
 

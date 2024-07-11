@@ -1,5 +1,12 @@
 
 
+## [4.0.5](https://github.com/CyanSalt/stylelint-config/compare/v4.0.4...v4.0.5) (2024-07-11)
+
+
+### Bug Fixes
+
+* unlimited at-rule ([ef170b9](https://github.com/CyanSalt/stylelint-config/commit/ef170b9012d2b179947ff6a0dd7cd61d56bfc2a4))
+
 ## [4.0.4](https://github.com/CyanSalt/stylelint-config/compare/v4.0.3...v4.0.4) (2024-06-07)
 
 

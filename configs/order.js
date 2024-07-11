@@ -377,7 +377,6 @@ export default defineConfig(options => {
             },
             'dollar-variables',
             'custom-properties',
-            'at-rules',
             'declarations',
             {
               type: 'at-rule',

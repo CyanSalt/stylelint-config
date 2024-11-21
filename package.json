@@ -39,7 +39,7 @@
     "@release-it/conventional-changelog": "^9.0.3",
     "eslint": "^9.15.0",
     "release-it": "^17.10.0",
-    "sass": "^1.81.0",
+    "sass-embedded": "^1.81.0",
     "stylelint": "^16.10.0"
   },
   "peerDependencies": {

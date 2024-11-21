@@ -1,8 +1,9 @@
 .foo {
   height: 20px;
+  /* stylelint-disable-next-line order/properties-order */
   width: 20px;
-  /* stylelint-disable-next-line @stylistic/property-case */
-  DISPLAY: block;
   /* stylelint-disable-next-line property-disallowed-list */
   widows: 2;
+  /* stylelint-disable-next-line @stylistic/property-case */
+  DISPLAY: block;
 }

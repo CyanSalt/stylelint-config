@@ -1,11 +1,12 @@
 <style lang="css">
 .foo {
   height: 20px;
+  /* stylelint-disable-next-line order/properties-order */
   width: 20px;
-  /* stylelint-disable-next-line @stylistic/property-case */
-  DISPLAY: block;
   /* stylelint-disable-next-line property-disallowed-list */
   widows: 2;
+  /* stylelint-disable-next-line @stylistic/property-case */
+  DISPLAY: block;
 }
 </style>
 
@@ -14,10 +15,10 @@
   @include bar($baz);
   // stylelint-disable-next-line scss/dollar-variable-colon-space-before
   $baz : 2;
-  // stylelint-disable-next-line @stylistic/property-case
-  DISPLAY: block;
   // stylelint-disable-next-line property-disallowed-list
   widows: 2;
+  // stylelint-disable-next-line @stylistic/property-case
+  DISPLAY: block;
   // stylelint-disable-next-line aurora/selector-nested-combinator-position
   > {
     .bar {

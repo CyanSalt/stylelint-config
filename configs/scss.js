@@ -30,6 +30,8 @@ export default defineConfig(options => {
           ignoreAnnotations: ['default'],
         }],
         // 允许在属性值中插入 SCSS 表达式
+        // 'declaration-property-value-no-unknown': null,
+        // 'scss/declaration-property-value-no-unknown': true,
         'declaration-property-value-no-unknown': [true, {
           ignoreProperties: {
             '/.+/': [

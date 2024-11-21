@@ -1,5 +1,11 @@
 
 
+## [4.1.0](https://github.com/CyanSalt/stylelint-config/compare/v4.0.5...v4.1.0) (2024-11-21)
+
+### Features
+
+* update plugins ([d7aebd1](https://github.com/CyanSalt/stylelint-config/commit/d7aebd1ca2d8c720ea1550ded546a3ef5e191608))
+
 ## [4.0.5](https://github.com/CyanSalt/stylelint-config/compare/v4.0.4...v4.0.5) (2024-07-11)
 
 

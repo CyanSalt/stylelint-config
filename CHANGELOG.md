@@ -1,4 +1,14 @@
+# Changelog
 
+## [4.2.0](https://github.com/CyanSalt/stylelint-config/compare/v4.1.0...v4.2.0) (2025-07-04)
+
+### Features
+
+* update rules ([691b573](https://github.com/CyanSalt/stylelint-config/commit/691b57366e862e67a3f3ee60e000abfbc1cda75a))
+
+### Bug Fixes
+
+* severity config ([06f6d87](https://github.com/CyanSalt/stylelint-config/commit/06f6d8793351b9b7045a62e1640a8f87d5af0ab0))
 
 ## [4.1.0](https://github.com/CyanSalt/stylelint-config/compare/v4.0.5...v4.1.0) (2024-11-21)
 

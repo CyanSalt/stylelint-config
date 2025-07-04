@@ -1,13 +1,10 @@
 import { defineConfig } from '../config.js'
 import { GLOB_ALL } from '../globs.js'
-import order from './order.js'
-import stylistic from './stylistic.js'
 
 export default defineConfig(options => {
   return [
-    ...stylistic(options),
-    ...order(options),
     {
+      name: '@cyansalt/css/setup',
       files: [GLOB_ALL],
       extends: [
         'stylelint-config-recommended',
@@ -20,10 +17,6 @@ export default defineConfig(options => {
         'no-descending-specificity': null,
         // 不启用强制字体使用关键字回退
         'font-family-no-missing-generic-family-keyword': null,
-        // 禁止定义非 CSS 规范的属性值
-        'declaration-property-value-no-unknown': true,
-        // 禁止定义非 CSS 规范的 media query 值
-        'media-feature-name-value-no-unknown': true,
         // 允许 export 等特殊作用的伪类
         'selector-pseudo-class-no-unknown': [true, {
           ignorePseudoClasses: [

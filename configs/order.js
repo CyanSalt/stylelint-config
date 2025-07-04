@@ -360,6 +360,7 @@ const groups = {
 export default defineConfig(options => {
   return [
     {
+      name: '@cyansalt/order/setup',
       files: [GLOB_ALL],
       plugins: [
         'stylelint-order',

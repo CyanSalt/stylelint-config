@@ -4,6 +4,7 @@ import { GLOB_ALL } from '../globs.js'
 export default defineConfig(options => {
   return [
     {
+      name: '@cyansalt/stylistic/setup',
       files: [GLOB_ALL],
       plugins: [
         '@stylistic/stylelint-plugin',

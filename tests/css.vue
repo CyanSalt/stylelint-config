@@ -5,7 +5,7 @@
   width: 20px;
   /* stylelint-disable-next-line property-disallowed-list */
   widows: 2;
-  /* stylelint-disable-next-line @stylistic/property-case */
+  /* stylelint-disable-next-line @stylistic/property-case, order/properties-order */
   DISPLAY: block;
 }
 </style>
@@ -17,7 +17,7 @@
   $baz : 2;
   // stylelint-disable-next-line property-disallowed-list
   widows: 2;
-  // stylelint-disable-next-line @stylistic/property-case
+  // stylelint-disable-next-line @stylistic/property-case, order/properties-order
   DISPLAY: block;
   // stylelint-disable-next-line aurora/selector-nested-combinator-position
   > {

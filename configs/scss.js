@@ -5,18 +5,18 @@ export default defineConfig(options => {
   if (!options.scss) return []
   return [
     {
+      name: '@cyansalt/scss/syntax',
       files: [GLOB_SCSS],
       customSyntax: 'postcss-scss',
     },
     {
+      name: '@cyansalt/scss/setup',
       files: [GLOB_ALL],
       plugins: [
         'stylelint-scss',
       ],
       rules: {
         /** 覆盖默认规则 */
-        // 允许未知的函数
-        'function-no-unknown': null,
         // 允许 SCSS 的 at-rule
         'at-rule-no-unknown': null,
         'scss/at-rule-no-unknown': true,
@@ -32,13 +32,15 @@ export default defineConfig(options => {
         // 允许在属性值中插入 SCSS 表达式
         // 'declaration-property-value-no-unknown': null,
         // 'scss/declaration-property-value-no-unknown': true,
+        'color-no-invalid-hex': true,
+        'unit-no-unknown': true,
         'declaration-property-value-no-unknown': [true, {
           ignoreProperties: {
             '/.+/': [
               // Variables
               '/\\$/',
               // Interpolation
-              '/#/',
+              '/#\\{/',
               // Functions
               '/\\([^)]*\\)/',
               // Operators
@@ -57,7 +59,7 @@ export default defineConfig(options => {
         'scss/dollar-variable-colon-space-after': ['always', { severity: 'warning' }],
         'scss/dollar-variable-colon-space-before': ['never', { severity: 'warning' }],
         // 必须在单行注释 // 的后面添加空格
-        'scss/double-slash-comment-whitespace-inside': 'always',
+        'scss/double-slash-comment-whitespace-inside': ['always', { severity: 'warning' }],
         // 禁用属性嵌套功能
         'scss/declaration-nested-properties': 'never',
         // 操作符换行时，必须出现在下一行开头
@@ -66,6 +68,8 @@ export default defineConfig(options => {
         'scss/operator-no-unspaced': true,
         // 禁止在同一个块内重复定义变量
         'scss/no-duplicate-dollar-variables': [true, { ignoreInside: ['at-rule'] }],
+        // 禁止重复导入规则
+        'scss/no-duplicate-load-rules': true,
         // 禁止在同一个块内重复定义 Mixin
         'scss/no-duplicate-mixins': true,
       },

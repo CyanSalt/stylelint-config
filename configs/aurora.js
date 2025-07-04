@@ -4,6 +4,7 @@ import { GLOB_ALL } from '../globs.js'
 export default defineConfig(options => {
   return [
     {
+      name: '@cyansalt/aurora/setup',
       files: [GLOB_ALL],
       plugins: [
         'stylelint-plugin-aurora',
@@ -11,6 +12,7 @@ export default defineConfig(options => {
     },
     ...(options.scss ? [
       {
+        name: '@cyansalt/aurora/scss',
         files: [GLOB_ALL],
         rules: {
           // 选择器组合符在嵌套时必须作为内部的前缀使用

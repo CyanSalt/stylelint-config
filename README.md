@@ -28,6 +28,7 @@ export default {
 import config from '@cyansalt/stylelint-config'
 
 export default {
+  rules: {},
   overrides: config({
 
     // Whether to enable SCSS rules.

@@ -13,6 +13,8 @@ export default defineConfig(options => {
       reportNeedlessDisables: true,
       rules: {
         /** Avoid errors */
+        // 允许向后兼容已废弃的属性值
+        'declaration-property-value-keyword-no-deprecated': null,
         // 不启用严格顺序覆盖检查
         'no-descending-specificity': null,
         // 不启用强制字体使用关键字回退
@@ -99,7 +101,10 @@ export default defineConfig(options => {
         // 标签选择器必须使用小写
         'selector-type-case': 'lower',
         // 关键字必须使用小写
-        'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
+        'value-keyword-case': ['lower', {
+          camelCaseSvgKeywords: true,
+          ignoreProperties: ['font-family'],
+        }],
         // 属性选择器的取值必须加引号
         'selector-attribute-quotes': 'always',
         // 自动在注释边界添加空格

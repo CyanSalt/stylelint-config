@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.3.0](https://github.com/CyanSalt/stylelint-config/compare/v4.2.0...v4.3.0) (2025-11-13)
+
+### Features
+
+* update plugins ([5e72d59](https://github.com/CyanSalt/stylelint-config/commit/5e72d596c979f9412ddd9692b0caecfd9cb777e9))
+
+### Bug Fixes
+
+* avoid parsing errors ([0d0b6fe](https://github.com/CyanSalt/stylelint-config/commit/0d0b6fe3407ae408f06fe8f9828a4dfa7922feda))
+* backward compat ([5d618fe](https://github.com/CyanSalt/stylelint-config/commit/5d618feb7447144d6c791aa093829ee5e272fca7))
+
 ## [4.2.0](https://github.com/CyanSalt/stylelint-config/compare/v4.1.0...v4.2.0) (2025-07-04)
 
 ### Features

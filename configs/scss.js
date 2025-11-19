@@ -40,6 +40,10 @@ export default defineConfig(options => {
         }],
         // 允许在 media query 值中插入 SCSS 表达式
         'media-feature-name-value-no-unknown': null,
+        // 允许在 Mixin 中使用嵌套选择器
+        'nesting-selector-no-missing-scoping-root': [true, {
+          ignoreAtRules: ['mixin'],
+        }],
       },
     },
     ...(options.scss ? [
